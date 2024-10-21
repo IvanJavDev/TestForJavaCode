@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wallets
+    username: wallet_user
+    password: wallet_pass
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  server:
+    port: 8080
